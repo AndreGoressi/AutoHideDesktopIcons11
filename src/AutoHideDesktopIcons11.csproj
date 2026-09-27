@@ -18,8 +18,8 @@
     <WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
     <SelfContained>true</SelfContained>
     
-    <!-- Hinzugefügt, um den Fehler bei der .pri-Generierung zu beheben -->
-    <EnableMsixTooling>true</EnableMsixTooling>
+    <!-- Sofortlösung gegen den .pri-Generierungsfehler bei Single-File -->
+    <PublishSingleFile>false</PublishSingleFile>
 
     <ApplicationIcon>Assets\AppIcon.ico</ApplicationIcon>
     <GenerateAppInstallerFile>false</GenerateAppInstallerFile>
