@@ -12,6 +12,7 @@ jobs:
   build:
     runs-on: windows-latest
     strategy:
+      fail-fast: false
       matrix:
         rid: [ win-x64, win-x86, win-arm64 ]
 
@@ -23,9 +24,6 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '8.0.x'
-
-      - name: Windows App SDK / MSIX Tooling vorbereiten
-        run: dotnet workload install wasdk --skip-manifest-update
 
       - name: Restore
         run: dotnet restore src/AutoHideDesktopIcons11/AutoHideDesktopIcons11.csproj -r ${{ matrix.rid }}
