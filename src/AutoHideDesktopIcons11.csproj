@@ -13,13 +13,13 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <LangVersion>latest</LangVersion>
 
-    <!-- Portable, kein MSIX-Paket: einfacher Ordner (exe + DLLs) zum Mitnehmen. -->
+    <!-- Konfiguration für ungesperrte/portable Bereitstellung -->
     <WindowsPackageType>None</WindowsPackageType>
     <WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
     <SelfContained>true</SelfContained>
     
-    <!-- Sofortlösung gegen den .pri-Generierungsfehler bei Single-File -->
-    <PublishSingleFile>false</PublishSingleFile>
+    <!-- Zwingend erforderlich für das Windows App SDK bei bestimmten Publish-Modi -->
+    <EnableMsixTooling>true</EnableMsixTooling>
 
     <ApplicationIcon>Assets\AppIcon.ico</ApplicationIcon>
     <GenerateAppInstallerFile>false</GenerateAppInstallerFile>
