@@ -9,7 +9,8 @@ Zeit ohne Mausbewegung aus, damit der Blick auf das Hintergrundbild frei wird.
 Ein Klick auf den Desktop (links/mittel/rechts konfigurierbar) oder über das
 Desktop-Kontextmenü blendet sie sofort wieder ein.
 
-![Icon](src/AutoHideDesktopIcons11/Assets/AppIcon.png)
+<img width="256" height="256" alt="AppIcon" src="https://github.com/user-attachments/assets/d64b43dd-ee12-43cd-886c-59f4f18ca031" />
+
 
 ## Funktionsumfang (1:1 zum Original)
 
