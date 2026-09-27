@@ -15,6 +15,7 @@
 
     <!-- Portable, kein MSIX-Paket: einfache .exe zum Mitnehmen -->
     <WindowsPackageType>None</WindowsPackageType>
+    <EnableMsixTooling>true</EnableMsixTooling>
     <WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
     <SelfContained>true</SelfContained>
     <PublishSingleFile>true</PublishSingleFile>
@@ -23,7 +24,6 @@
     <ApplicationIcon>Assets\AppIcon.ico</ApplicationIcon>
     <GenerateAppInstallerFile>false</GenerateAppInstallerFile>
     <AppxPackageSigningEnabled>false</AppxPackageSigningEnabled>
-    <Nullable>enable</Nullable>
     <Version>1.0.0</Version>
     <AssemblyName>AutoHideDesktopIcons11</AssemblyName>
     <Product>AutoHideDesktopIcons11</Product>
