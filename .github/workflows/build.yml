@@ -26,11 +26,11 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Restore
-        run: dotnet restore src/AutoHideDesktopIcons11/AutoHideDesktopIcons11.csproj -r ${{ matrix.rid }}
+        run: dotnet restore src/AutoHideDesktopIcons11.csproj -r ${{ matrix.rid }}
 
       - name: Publish (portable, self-contained, unpackaged)
         run: >
-          dotnet publish src/AutoHideDesktopIcons11/AutoHideDesktopIcons11.csproj
+          dotnet publish src/AutoHideDesktopIcons11.csproj
           -c Release
           -r ${{ matrix.rid }}
           --self-contained true
