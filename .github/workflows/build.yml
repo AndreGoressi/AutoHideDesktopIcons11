@@ -35,6 +35,7 @@ jobs:
           -r ${{ matrix.rid }}
           --self-contained true
           -p:WindowsAppSDKSelfContained=true
+          -p:PublishSingleFile=false
           -o publish/${{ matrix.rid }}
 
       - name: ZIP zum Mitnehmen packen
